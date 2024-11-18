@@ -13,14 +13,7 @@ Project Setup
 1. Project Structure
    Create the following directory structure:
 
-flask_user_system/
-├── app.py
-├── db_connection.py
-├── templates/
-│ ├── base.html
-│ ├── login.html
-│ ├── register.html
-│ └── home.html
+<pre> ``` flask_user_system/ ├── app.py ├── db_connection.py ├── templates/ │ ├── base.html │ ├── login.html │ ├── register.html │ └── home.html ``` </pre>
 
 2. Dependencies
 
