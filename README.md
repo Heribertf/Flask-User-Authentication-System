@@ -27,7 +27,7 @@ flask_user_system/
 
 # Install required packages
 
-<pre> ``` pip install flask bcrypt pyodbc ``` </pre>
+<pre> pip install flask bcrypt pyodbc </pre>
 
 3. Database Preparation
    Before running the application, you'll need to set up your SQL Server database:
@@ -35,13 +35,13 @@ flask_user_system/
 Create a database named UserSystemDB(or any name of your choice)
 Create a Users table:
 
-<pre> ```
+<pre>
 CREATE TABLE Users (
 UserID INT IDENTITY PRIMARY KEY,
 Username NVARCHAR(50) UNIQUE NOT NULL,
 PasswordHash NVARCHAR(255) NOT NULL,
 CreatedAt DATETIME DEFAULT GETDATE()
-); ``` </pre>
+); </pre>
 
 4. Database Connection (db_connection.py)
 
@@ -57,6 +57,6 @@ CreatedAt DATETIME DEFAULT GETDATE()
 
 7. Running the Application
    a. Run the Flask app:
- <pre> ```  python app.py ``` </pre>
+ <pre>  python app.py </pre>
 
 b. Access the system in your browser at http://127.0.0.1:5000.
