@@ -53,7 +53,6 @@ def register():
             conn = get_db_connection()
             cursor = conn.cursor()
 
-            # password_hash = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt())
             password_hash = bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')
 
 
